@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursefinder.CourseSearchController">
+   <children>
+      <Label layoutX="30.0" layoutY="19.0" text="Search Course">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="courseTableView" layoutX="30.0" layoutY="61.0" prefHeight="502.0" prefWidth="1020.0">
+         <columns>
+            <TableColumn fx:id="idTableColumn" prefWidth="48.0" text="ID" />
+            <TableColumn fx:id="titleTableColumn" prefWidth="165.0" text="Title" />
+            <TableColumn fx:id="addressTableColumn" prefWidth="119.0" text="Address" />
+            <TableColumn fx:id="priceTableColumn" prefWidth="203.0" text="Price" />
+            <TableColumn fx:id="emailTableColumn" prefWidth="224.0" text="Email" />
+            <TableColumn fx:id="descriptionTableColumn" prefWidth="260.0" text="Description" />
+         </columns>
+      </TableView>
+      <TextField fx:id="keyWordTextField" layoutX="134.0" layoutY="17.0" prefHeight="25.0" prefWidth="915.0" promptText="Keywords..." />
+   </children>
+</Pane>
