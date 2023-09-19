@@ -1,0 +1,13 @@
+CREATE TABLE courses (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255),
+    address VARCHAR(255),
+    price DECIMAL(10, 2),
+    email VARCHAR(255),
+    description TEXT
+);
+INSERT INTO courses (title, address, price, email, description)
+VALUES
+    ('Course 1', '123 Main Street', 99.99, 'email1@example.com', 'Description for Course 1'),
+    ('Course 2', '456 Elm Street', 149.99, 'email2@example.com', 'Description for Course 2'),
+    ('Course 3', '789 Oak Street', 79.99, 'email3@example.com', 'Description for Course 3');
