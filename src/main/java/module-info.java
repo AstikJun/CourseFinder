@@ -3,6 +3,7 @@ module com.example.coursefinder {
     requires javafx.fxml;
     requires javafx.graphics;
     requires java.sql;
+    requires org.postgresql.jdbc;
 
 
     opens com.example.coursefinder to javafx.fxml;
